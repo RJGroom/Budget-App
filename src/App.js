@@ -4,14 +4,16 @@ import './App.css';
 import Register from './Components/Register';
 import Login from './Components/Login';
 import Landing from './Components/Landing';
+import UserInfo from './Components/ProfilePage/UserInfo';
+import RecentPurchases from './Components/ProfilePage/RecentPurchases';
 
 class App extends Component {
 
   constructor(props) {
     super(props);
     this.state = {
-      hasAccount: false,
-      isLoggedIn: false
+      hasAccount: true,
+      isLoggedIn: true
     }
   }
 
@@ -22,8 +24,11 @@ class App extends Component {
         <div className="section profile-data">
 
         {
-        this.state.hasAccount? <Login />
-        : <Register />
+        this.state.isLoggedIn?
+          <UserInfo />
+        :
+          this.state.hasAccount? <Login />
+          : <Register />
         }
           
         </div>
@@ -36,6 +41,7 @@ class App extends Component {
           </div>
 
           <div className="section section-two">
+            <RecentPurchases />
           </div>
 
           <div className="section section-three">
