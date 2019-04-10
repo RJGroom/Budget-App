@@ -45,7 +45,6 @@
 }
 
 .login-component {
-
 }
 
 .login-input {
@@ -128,6 +127,11 @@
 
 .user-info a {
   text-decoration: none;
+  opacity: 0.7;
+}
+
+.user-info a:hover {
+  opacity: 1;
 }
 
 .top-spending-one {
@@ -174,24 +178,65 @@
   grid-column: 2/3;
 }
 
-.section-two {
-  grid-row: 1/5;
+.add-recent-purchase {
+  grid-row: 1/3;
   grid-column: 3/4;
+  display: flex;
+  align-items: flex-start;
 }
 
-.purchase-submit {
-  margin: 0.5em;
-  float: right;
+.add-recent-purchase-container {
+  width: 90%;
+}
+
+.add-recent-purchase-form {
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+}
+
+.add-recent-purchase-form div {
+  margin-right: 1em;
+}
+
+.recent-purchases {
+  grid-row: 3/11;
+  grid-column: 3/4;
+  display: flex;
+  align-items: flex-start;
+}
+
+.recent-purchases-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+}
+
+.recent-purchases-container h3 {
+  width: 100%;
+}
+
+.recent-purchases-table {
+  width: 100%;
+  border: 1px solid lightgray;
+}
+
+th {
+  background-color: lightgray;
+}
+
+tr:nth-child(odd) {
+  background-color: lightgray;
+}
+
+td p {
+  margin-left: 1em;
 }
 
 .section-three {
   grid-row: 6/11;
   grid-column: 2/3;
-}
-
-.section-four {
-  grid-row: 5/11;
-  grid-column: 3/4;
 }
 
 .section-five {
