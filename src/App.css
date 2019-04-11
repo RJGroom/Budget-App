@@ -134,10 +134,23 @@
   opacity: 1;
 }
 
+.top-spending {
+  grid-row: 1/6;
+  grid-column: 2/3;
+}
+
+.top-spending-container {
+  width: 90%;
+}
+
+.top-spending-data p{
+  margin: 0;
+}
+
 .top-spending-one {
   position: relative;
   width: 100%;
-  height: 1em;
+  height: 2em;
   background-color: rgba(255, 0, 0, 0.5);
 }
 
@@ -150,7 +163,7 @@
 .top-spending-two {
   position: relative;
   width: 100%;
-  height: 1em;
+  height: 2em;
   background-color: rgba(0, 128, 0, 0.5);
 }
 
@@ -163,7 +176,7 @@
 .top-spending-three {
   position: relative;
   width: 100%;
-  height: 1em;
+  height: 2em;
   background-color: rgba(0, 0, 255, 0.5);
 }
 
@@ -171,11 +184,6 @@
   width: 22%;
   height: 100%;
   background-color: blue;
-}
-
-.section-one {
-  grid-row: 1/6;
-  grid-column: 2/3;
 }
 
 .add-recent-purchase {
@@ -244,7 +252,7 @@ td p {
   grid-column: 2/4;
 }
 
-.section-six {
+.suggestions {
   grid-row: 16/21;
   grid-column: 2/3;
 }

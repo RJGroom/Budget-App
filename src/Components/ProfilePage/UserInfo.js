@@ -20,21 +20,6 @@ const UserInfo = () => {
                 <p>Total Excess Funds: $800</p>
                 <p>Remaining Excess Funds: $200</p> <br />
             </div>
-            <h3 className="user-data-header">Your Top Spending</h3>
-            <div className="user-data">
-                <p>Housing (57%)</p>
-                <div className="top-spending-one">
-                    <div className="top-spending-one-bar"></div>
-                </div>
-                <p>Food (33%)</p>
-                <div className="top-spending-two">
-                    <div className="top-spending-two-bar"></div>
-                </div>
-                <p>Loans (22%)</p>
-                <div className="top-spending-three">
-                    <div className="top-spending-three-bar"></div>
-                </div>
-            </div>
             <a href="#">Log out</a>
         </div>
     )

@@ -5,8 +5,10 @@ import Register from './Components/Register';
 import Login from './Components/Login';
 import Landing from './Components/Landing';
 import UserInfo from './Components/ProfilePage/UserInfo';
+import TopSpending from './Components/ProfilePage/TopSpending';
 import AddRecentPurchase from './Components/ProfilePage/AddRecentPurchase';
 import RecentPurchases from './Components/ProfilePage/RecentPurchases';
+import Suggestions from './Components/ProfilePage/Suggestions';
 
 class App extends Component {
 
@@ -38,7 +40,8 @@ class App extends Component {
         this.state.isLoggedIn? 
 
         <div className="main-content-profile">
-          <div className="section section-one">
+          <div className="section top-spending">
+            <TopSpending />
           </div>
 
           <div className="section add-recent-purchase">
@@ -55,7 +58,8 @@ class App extends Component {
           <div className="section section-five">
           </div>
 
-          <div className="section section-six">
+          <div className="section suggestions">
+            <Suggestions />
           </div>
 
           <div className="section section-seven">
