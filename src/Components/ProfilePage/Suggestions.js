@@ -5,7 +5,7 @@ const Suggestions = () => {
         <div className="suggestions-container">
             <h3>Suggestions Tailored For You</h3>
             <ul>
-                <li>Suggestion One</li>
+                <li>Keep your information up-to-date</li>
                 <li>Suggestion Two</li>
                 <li>Suggestion Three</li>
                 <li>Suggestion Four</li>

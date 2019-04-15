@@ -1,13 +1,38 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Montserrat|Open+Sans|Poppins|Raleway|Roboto|Roboto+Condensed|Titillium+Web');
+
 .App {
 }
 
+/* Universal styles */
+h3 {
+  margin: 1em;
+  font-family: 'Roboto';
+}
+
+li {
+  font-family: 'Roboto';
+}
+
+p {
+  font-family: 'Roboto';
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-apperance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+/* Styles for the content a user who is not logged in sees */
 .landing-page-container {
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: 20vw 1fr;
   width: 100vw;
   height: 100vh;
-  background-color: pink;
+  background-color: #ffc0cb;
 }
 
 .landing-page-content {
@@ -18,6 +43,7 @@
   justify-content: center;
 }
 
+/* Styles for the logged in user's profile */
 .main-content-profile {
   display: grid;
   grid-template-rows: repeat(30, 1fr);
@@ -25,16 +51,18 @@
   grid-gap: 0.5em;
   width: 100vw;
   height: 300vh;
-  background-color: gray;
+  background-color: #d3d3d3;
 }
 
+/* Styles applied to every grid section */
 .section {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgb(243, 240, 240);
+  background-color: #f3f0f0;
 }
 
+/* Styles for the fixed section that contains users' main profile data */
 .profile-data {
   position: fixed;
   width: 20vw;
@@ -44,6 +72,7 @@
   justify-content: center;
 }
 
+/* When the user is not logged in */
 .login-component {
 }
 
@@ -64,10 +93,7 @@
   text-decoration: none;
 }
 
-.register-component {
-
-}
-
+/* When the user clicks the register button */
 .register-input {
   height: 2em;
 }
@@ -86,6 +112,7 @@
   text-decoration: none;
 }
 
+/* When the user is logged in */
 .user-info {
   display: flex;
   flex-direction: column;
@@ -139,10 +166,18 @@
   grid-column: 2/3;
   display: flex;
   align-items: flex-start;
+  background-color: #49af49;
 }
 
 .emergency-funds-container {
-  width: 90%;
+  width: 100%;
+  color: #ffffff;
+}
+
+.emergency-funds-container h4 {
+  margin: 0;
+  text-align: center;
+  font-size: 5em;
 }
 
 .spending-categories {
@@ -153,7 +188,7 @@
 }
 
 .spending-categories-container {
-  width: 90%;
+  width: 100%;
   height: 100%;
 }
 
@@ -165,50 +200,57 @@
 }
 
 .top-spending-container {
+  width: 100%;
+}
+
+.top-spending-data {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
   width: 90%;
 }
 
 .top-spending-data p{
-  margin: 0;
+  margin: 0.5em 0 0 0;
 }
 
 .top-spending-one {
   position: relative;
   width: 100%;
   height: 2em;
-  background-color: rgba(255, 0, 0, 0.5);
+  background-color: #ff000080;
 }
 
 .top-spending-one-bar {
   width: 57%;
   height: 100%;
-  background-color: red;
+  background-color: #ff0000;
 }
 
 .top-spending-two {
   position: relative;
   width: 100%;
   height: 2em;
-  background-color: rgba(0, 128, 0, 0.5);
+  background-color: #00800080;
 }
 
 .top-spending-two-bar {
   width: 33%;
   height: 100%;
-  background-color: green;
+  background-color: #008000;
 }
 
 .top-spending-three {
   position: relative;
   width: 100%;
   height: 2em;
-  background-color: rgba(0, 0, 255, 0.5);
+  background-color: #0000ff80;
 }
 
 .top-spending-three-bar {
   width: 22%;
   height: 100%;
-  background-color: blue;
+  background-color: #0000ff;
 }
 
 .monthly-spending-habits {
@@ -219,7 +261,7 @@
 }
 
 .monthly-spending-habits-container {
-  width: 90%;
+  width: 100%;
   height: 100%;
 }
 
@@ -231,7 +273,7 @@
 }
 
 .suggestions-container {
-  width: 90%;
+  width: 100%;
 }
 
 .untitled-section-one {
@@ -249,13 +291,35 @@
 }
 
 .add-recent-purchase-container {
-  width: 90%;
+  width: 100%;
 }
 
 .add-recent-purchase-form {
   display: flex;
   align-items: flex-end;
+  justify-content: center;
   width: 100%;
+}
+
+.add-recent-purchase-input {
+  border: none;
+  border-bottom: 2px solid #808080;
+  background: none;
+  transition: 500ms ease;
+}
+
+.add-recent-purchase-input:focus {
+  outline: none;
+  border-bottom: 2px solid #49af49;
+  background: none;
+}
+
+.add-recent-purchase-input::placeholder {
+  transition: 500ms ease;
+}
+
+.add-recent-purchase-input:focus::placeholder {
+  color: #49af49;
 }
 
 .add-recent-purchase-form div {
@@ -272,40 +336,75 @@
 .recent-purchases-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  width: 90%;
-}
-
-.recent-purchases-container h3 {
   width: 100%;
+  height: 100%;
 }
 
 .recent-purchases-table {
   width: 100%;
-  border: 1px solid lightgray;
+  height: 80%;
+  border-collapse: collapse;
 }
 
 th {
-  background-color: lightgray;
+  background-color: #d3d3d3;
 }
 
-tr:nth-child(odd) {
-  background-color: lightgray;
+tr {
+  height: 25%;
 }
 
-td p {
+.recent-purchases-table tr:nth-child(1) {
+  background-color: #DB5B5B;
+}
+
+.recent-purchases-table tr:nth-child(2) {
+  background-color: #DB955B;
+}
+
+.recent-purchases-table tr:nth-child(3) {
+  background-color: #49af49;
+}
+
+.recent-purchases-table tr:nth-child(4) {
+  background-color: #378383;
+}
+
+.recent-purchases-table td p {
   margin-left: 1em;
+  color: #ffffff;
 }
 
-.spending-goal {
+.recent-purchases-table td:nth-child(1) {
+  font-size: 30px;
+}
+
+.recent-purchases-table td:nth-child(2) {
+  text-align: center;
+}
+
+.spending-limit {
   grid-row: 11/14;
   grid-column: 3/4;
   display: flex;
   align-items: flex-start;
+  background-color: #49af49;
 }
 
-.spending-goal-container {
-  width: 90%;
+.spending-limit-container {
+  width: 100%;
+  color: #ffffff;
+}
+
+.spending-limit-container h4 {
+  margin: 0;
+  text-align: center;
+  font-size: 5em;
+}
+
+.spending-limit-container p {
+  margin: 0;
+  text-align: center;
 }
 
 .upcoming-bills {
@@ -316,12 +415,12 @@ td p {
 }
 
 .upcoming-bills-container {
-  width: 90%;
+  width: 100%;
 }
 
 .upcoming-bills-table {
   width: 100%;
-  border: 1px solid lightgray;
+  border: 1px solid #d3d3d3;
 }
 
 .untitled-section-two {
@@ -330,4 +429,3 @@ td p {
   display: flex;
   align-items: flex-start;
 }
-

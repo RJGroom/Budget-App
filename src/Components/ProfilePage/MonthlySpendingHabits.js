@@ -7,7 +7,9 @@ const MonthlySpendingHabits = () => {
             <h3>Monthly Spending Habits</h3>
             <Chart
                 chartType='LineChart'
-                loader={<div>Loading Chart</div>}
+                width='100%'
+                height='90%'
+                loader={<div>Loading Chart...</div>}
                 data={[
                     ['x', 'You Spent', 'Your Limit'],
                     ['January', 100, 200],
@@ -26,12 +28,16 @@ const MonthlySpendingHabits = () => {
 
                 options={{
                     hAxis: {
-                        title:'Month'
+                        title:'Month',
+                        titleTextStyle: {bold: 'true'}
                     },
                     vAxis: {
-                        title:'Money Spent'
+                        title:'Money Spent',
+                        titleTextStyle: {bold: 'true'},
+                        format: '$###,###,###'
                     },
-                    chartArea: {height: '100%'},
+                    legend: {position: 'top', alignment: 'center'},
+                    chartArea: {height: '60%', width: 'auto'},
                     backgroundColor: {fill: 'none'}
                 }}
 

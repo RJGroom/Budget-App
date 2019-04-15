@@ -5,7 +5,7 @@ import Register from './Components/Register';
 import Login from './Components/Login';
 import Landing from './Components/Landing';
 import UserInfo from './Components/ProfilePage/UserInfo';
-import SpendingGoal from './Components/ProfilePage/SpendingGoal';
+import SpendingLimit from './Components/ProfilePage/SpendingLimit';
 import SpendingCategories from './Components/ProfilePage/SpendingCategories';
 import TopSpending from './Components/ProfilePage/TopSpending';
 import AddRecentPurchase from './Components/ProfilePage/AddRecentPurchase';
@@ -77,8 +77,8 @@ class App extends Component {
             <RecentPurchases />
           </div>
 
-          <div className="section spending-goal">
-            <SpendingGoal />
+          <div className="section spending-limit">
+            <SpendingLimit />
           </div>
 
           <div className="section upcoming-bills">

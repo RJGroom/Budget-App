@@ -12,6 +12,8 @@ const SpendingCategories = () => {
             <h3>Spending Categories</h3>
             <Chart
                 chartType='PieChart'
+                height='90%'
+                width='100%'
                 loader={<div>Loading Chart...</div>}
                 data={[
                     ['Category', 'Income Allocated'],
@@ -22,7 +24,7 @@ const SpendingCategories = () => {
                     ['Item 5', 20]
                 ]}
                 options={{
-                    chartArea: {width: '100%', height: '100%'},
+                    chartArea: {width: '90%', height: '90%'},
                     backgroundColor: {fill: 'transparent'},
                     enableInteractivity: false,
                     pieSliceBorderColor: 'none',
