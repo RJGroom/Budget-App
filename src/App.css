@@ -20,12 +20,12 @@
 
 .main-content-profile {
   display: grid;
-  grid-template-rows: repeat(20, 1fr);
+  grid-template-rows: repeat(30, 1fr);
   grid-template-columns: 20vw repeat(2, 1fr);
   grid-gap: 0.5em;
   width: 100vw;
-  height: 200vh;
-  background-color: pink;
+  height: 300vh;
+  background-color: gray;
 }
 
 .section {
@@ -134,9 +134,34 @@
   opacity: 1;
 }
 
-.top-spending {
-  grid-row: 1/6;
+.emergency-funds {
+  grid-row: 1/4;
   grid-column: 2/3;
+  display: flex;
+  align-items: flex-start;
+}
+
+.emergency-funds-container {
+  width: 90%;
+}
+
+.spending-categories {
+  grid-row: 4/10;
+  grid-column: 2/3;
+  display: flex;
+  align-items: flex-start;
+}
+
+.spending-categories-container {
+  width: 90%;
+  height: 100%;
+}
+
+.top-spending {
+  grid-row: 10/14;
+  grid-column: 2/3;
+  display: flex;
+  align-items: flex-start;
 }
 
 .top-spending-container {
@@ -184,6 +209,36 @@
   width: 22%;
   height: 100%;
   background-color: blue;
+}
+
+.monthly-spending-habits {
+  grid-row: 14/20;
+  grid-column: 2/4;
+  display: flex;
+  align-items: flex-start;
+}
+
+.monthly-spending-habits-container {
+  width: 90%;
+  height: 100%;
+}
+
+.suggestions {
+  grid-row: 20/24;
+  grid-column: 2/3;
+  display: flex;
+  align-items: flex-start;
+}
+
+.suggestions-container {
+  width: 90%;
+}
+
+.untitled-section-one {
+  grid-row: 24/31;
+  grid-column: 2/3;
+  display: flex;
+  align-items: flex-start;
 }
 
 .add-recent-purchase {
@@ -242,22 +297,37 @@ td p {
   margin-left: 1em;
 }
 
-.section-three {
-  grid-row: 6/11;
-  grid-column: 2/3;
-}
-
-.section-five {
-  grid-row: 11/16;
-  grid-column: 2/4;
-}
-
-.suggestions {
-  grid-row: 16/21;
-  grid-column: 2/3;
-}
-
-.section-seven {
-  grid-row: 16/21;
+.spending-goal {
+  grid-row: 11/14;
   grid-column: 3/4;
+  display: flex;
+  align-items: flex-start;
 }
+
+.spending-goal-container {
+  width: 90%;
+}
+
+.upcoming-bills {
+  grid-row: 20/28;
+  grid-column: 3/4;
+  display: flex;
+  align-items: flex-start;
+}
+
+.upcoming-bills-container {
+  width: 90%;
+}
+
+.upcoming-bills-table {
+  width: 100%;
+  border: 1px solid lightgray;
+}
+
+.untitled-section-two {
+  grid-row: 28/31;
+  grid-column: 3/4;
+  display: flex;
+  align-items: flex-start;
+}
+

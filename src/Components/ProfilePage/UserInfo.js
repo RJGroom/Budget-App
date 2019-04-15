@@ -20,6 +20,11 @@ const UserInfo = () => {
                 <p>Total Excess Funds: $800</p>
                 <p>Remaining Excess Funds: $200</p> <br />
             </div>
+            <div className="user-data">
+                <p>Your next bill is your "Name of Bill".</p>
+                <p>It is due by "Date".</p>
+             <a href="#">View All</a>
+            </div>
             <a href="#">Log out</a>
         </div>
     )

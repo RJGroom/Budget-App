@@ -2,7 +2,7 @@ import React from 'react';
 
 const Suggestions = () => {
     return (
-        <div>
+        <div className="suggestions-container">
             <h3>Suggestions Tailored For You</h3>
             <ul>
                 <li>Suggestion One</li>

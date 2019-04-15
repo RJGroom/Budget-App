@@ -5,10 +5,15 @@ import Register from './Components/Register';
 import Login from './Components/Login';
 import Landing from './Components/Landing';
 import UserInfo from './Components/ProfilePage/UserInfo';
+import SpendingGoal from './Components/ProfilePage/SpendingGoal';
+import SpendingCategories from './Components/ProfilePage/SpendingCategories';
 import TopSpending from './Components/ProfilePage/TopSpending';
 import AddRecentPurchase from './Components/ProfilePage/AddRecentPurchase';
 import RecentPurchases from './Components/ProfilePage/RecentPurchases';
+import EmergencyFunds from './Components/ProfilePage/EmergencyFunds';
 import Suggestions from './Components/ProfilePage/Suggestions';
+import MonthlySpendingHabits from './Components/ProfilePage/MonthlySpendingHabits';
+import UpcomingBills from './Components/ProfilePage/UpcomingBills';
 
 class App extends Component {
 
@@ -40,8 +45,28 @@ class App extends Component {
         this.state.isLoggedIn? 
 
         <div className="main-content-profile">
+
+          <div className="section emergency-funds">
+            <EmergencyFunds />
+          </div>
+
+          <div className="section spending-categories">
+            <SpendingCategories />
+          </div>
+
           <div className="section top-spending">
             <TopSpending />
+          </div>
+
+          <div className="section monthly-spending-habits">
+            <MonthlySpendingHabits />
+          </div>
+
+          <div className="section suggestions">
+            <Suggestions />
+          </div>
+
+          <div className="section untitled-section-one">
           </div>
 
           <div className="section add-recent-purchase">
@@ -52,17 +77,15 @@ class App extends Component {
             <RecentPurchases />
           </div>
 
-          <div className="section section-three">
+          <div className="section spending-goal">
+            <SpendingGoal />
           </div>
 
-          <div className="section section-five">
+          <div className="section upcoming-bills">
+            <UpcomingBills />
           </div>
 
-          <div className="section suggestions">
-            <Suggestions />
-          </div>
-
-          <div className="section section-seven">
+          <div className="section untitled-section-two">
           </div>
         </div>
         : <Landing />
